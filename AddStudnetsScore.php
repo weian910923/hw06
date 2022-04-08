@@ -1,3 +1,10 @@
+<?php
+//變數 宣告陣列 從1 開始 student_score[1]
+//placeholder  代表文字匡提示
+//type="number"  數字  
+//min="0" max="100"  設定最小值／最大值
+
+?>
 <!DOCTYPE html>
 <html lang = "en">
 <head>
