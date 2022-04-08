@@ -3,6 +3,8 @@
 //placeholder  代表文字匡提示
 //type="number"  數字  
 //min="0" max="100"  設定最小值／最大值
+// <form action = "ShowStudnetsScore.php" method = "post">
+// method 是 post 安全性高 ;form action 會傳給後端 ShowStudnetsScore.php 
 
 ?>
 <!DOCTYPE html>
