@@ -1,8 +1,15 @@
 <?php 
 
 $student_score_arr=($_POST['student_score']);
+//確認變數 是否是陣列
+//var_dump($student_score_arr);
+//exit;
+
+//設定及格分數 60 
 $passing_score = "60";
-$i = 0;
+
+//跑 foreach 計算 及格/不及格人數
+// $psssed  及格人數 ;$failed 不及格人數
 foreach($student_score_arr as $value)
 {
   if($value >= $passing_score){ 
@@ -11,7 +18,17 @@ foreach($student_score_arr as $value)
     $failed++;
   }
 }
- 
+/********
+<?php 
+    <tr class = "odd gradeX">
+    foreach($student_score_arr as $key => $score){?>
+    <td><?PHP echo $key; ?></td>
+    <td><?PHP echo $score; ?></td>
+</tr>
+<?php }?>
+********/
+//跑 foreach 印出學生成績 變數 宣告陣列 從1 開始 student_score[1] 
+
 ?>
 
 <!DOCTYPE html>
@@ -62,12 +79,12 @@ foreach($student_score_arr as $value)
                 </tr>
                 </thead>
                 <tbody>
-                    <tr class = "odd gradeX">
                     <?php foreach($student_score_arr as $key => $score){?>
+                    <tr class = "odd gradeX">
                         <td><?PHP echo $key; ?></td>
                         <td><?PHP echo $score; ?></td>
                     </tr>
-                     <?php }?>
+                    <?php }?>
                 </tbody>
             </table>
             <table width = "100%" class = "table table-striped table-bordered table-hover" id = "dataTables-example">
