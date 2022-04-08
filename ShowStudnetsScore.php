@@ -41,7 +41,7 @@ foreach($student_score_arr as $value)
         </div>
         <div class = "collapse navbar-collapse" id = "bs-example-navbar-collapse-1">
             <ul class = "nav navbar-nav">
-                <li class = "active"><a href = "ShowAddStudnetsScore.php">新增學生成績<span class = "sr-only">(current)</span></a></li>
+                <li class = "active"><a href = "AddStudnetsScore.php">新增學生成績<span class = "sr-only">(current)</span></a></li>
                 <li class = "active"><a href = "ShowStudnetsScore.php">查詢學生成績<span class = "sr-only">(current)</span></a></li>
             </ul>
         </div>
